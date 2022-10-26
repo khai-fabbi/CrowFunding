@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { ButtonPrimary } from './components/button'
-import { LazyLoading } from './components/loading'
+import { LazyLoading } from '@/components/loading'
+import { ButtonPrimary } from '@/components/button'
 
-const HomeLayout = React.lazy(() => import('./layouts/home/home-layout'))
+const HomeLayout = React.lazy(() => import('@/layouts/home-layout'))
 function App() {
   return (
     <Suspense fallback={<LazyLoading />}>
