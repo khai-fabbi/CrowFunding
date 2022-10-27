@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
   body {
-    @apply font-primary text-base;
+    @apply font-primary text-base text-default;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }

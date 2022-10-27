@@ -7,6 +7,7 @@ module.exports = {
         primary: ['Epilogue', 'sans-serif'],
       },
       colors: {
+        default: '#000',
         primary: '#1DC071',
         secondary: '#6F49FD',
         text1: '#171725',
@@ -41,7 +42,20 @@ module.exports = {
   plugins: [require('daisyui')],
   daisyui: {
     styled: true,
-    themes: true,
+    themes: [
+      {
+        mytheme: {
+          primary: '#1DC071',
+          secondary: '#6F49FD',
+          accent: '#37CDBE',
+          neutral: '#3D4451',
+          info: '#3ABFF8',
+          success: '#36D399',
+          warning: '#FBBD23',
+          error: '#EB5757',
+        },
+      },
+    ],
     base: true,
     utils: true,
     logs: true,
