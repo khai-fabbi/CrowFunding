@@ -1,2 +1,3 @@
 import LazyLoading from './lazy-load'
-export { LazyLoading }
+import LoadingPage from './page-load'
+export { LazyLoading, LoadingPage }
